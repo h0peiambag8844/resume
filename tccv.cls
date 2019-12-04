@@ -110,7 +110,7 @@
 %         {address}
 %         {phone number}
 %         {email}
-\newcommand\personal[4][]{%
+\newcommand\personal[5][]{%
     \newcommand\SYMBOL[1]{\raisebox{-2pt}{\Large\ding{##1}}}%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
@@ -120,7 +120,8 @@
     \SYMBOL{45} & {#2}\smallskip\\
     \SYMBOL{37} & {#3}\smallskip\\
     \SYMBOL{41} & \href{mailto:#4}{#4}
-    \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{218} & \href{http://#1}{#1}}
+    \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{218} & \href{https://#1}{#1}}
+    \ifstrempty{#5}{}{\smallskip\\ \SYMBOL{218} & \href{https://#5}{#5}}
     \end{tabularx}}}
 
 % Every \item can be followed by one or more paragraphs
