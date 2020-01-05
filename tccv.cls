@@ -119,7 +119,7 @@
     \begin{tabularx}{\boxwidth}{c|X}
     \SYMBOL{45} & {#2}\smallskip\\
     \SYMBOL{37} & {#3}\smallskip\\
-    \SYMBOL{41} & \href{mailto:#4}{#4}
+    \SYMBOL{41} & {#4}
     \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{218} & \href{https://#1}{#1}}
     \ifstrempty{#5}{}{\smallskip\\ \SYMBOL{218} & \href{https://#5}{#5}}
     \end{tabularx}}}
