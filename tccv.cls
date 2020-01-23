@@ -61,7 +61,7 @@
 	tex.print(dst)}}
 
 \pagestyle{empty}
-\setlength\parindent{0pt}
+\usepackage{parskip}
 \color[HTML]{303030} % Default foreground color
 \definecolor{link}{HTML}{506060} % Hyperlinks
 \hypersetup{colorlinks,breaklinks,urlcolor=link,linkcolor=link}
@@ -87,7 +87,6 @@
 \renewcommand\section[2][]{%
     \old@section[#1]{\ucwords{#2}}%
     \newdimen\raising%
-    \raising=\dimexpr-0.7\baselineskip\relax%
     \vskip\raising\hrule height 0.4pt\vskip-\raising}
 
 % Allow conditionals based on the job name. This can usually be set
