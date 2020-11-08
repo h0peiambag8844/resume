@@ -85,7 +85,7 @@
 % word for cosmetic purposes and draws a rule under it.
 \let\old@section\section
 \renewcommand\section[2][]{%
-    \old@section[#1]{\ucwords{#2}}%
+    \vspace{-0.7cm}\old@section[#1]{\ucwords{#2}}%
     \newdimen\raising%
     \vskip\raising\hrule height 0.4pt\vskip-\raising}
 

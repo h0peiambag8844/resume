@@ -10,212 +10,110 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage[super]{nth}
+\newcommand{\myhref}[2]{\href{#1}{#2}\footnote{\url{#1}}}
 
 \begin{document}
 
 \part{Kevin Liu}
 
-% You could put a short summary here!
-
-Version 2020.10
-
-\section{Summary}
-
-Student tech entrepreneur, experienced full-stack programmer with extensive
-knowledge of Solidity, React, JavaScript, Java, C\#, Python. Interested in
-applying principles of effective altruism to real-world risks.
-
-\section{Work Experience}
-
-\begin{eventlist}
-
-\item{2018 -- Present}
-     {Delphus} {Co-founder \& CTO}
-
-    Startup aiming to restore trust and transparency to scientific research.
-    \href{https://delph.us}{\textbf{Delphus}}, improves data tracing by
-    recording all study actions immutably on an append-only ledger.
-
-\end{eventlist}
-
-\vspace{-0.5cm}
-\begin{enumerate}
-     \item Directed product development; implemented majority of features in
-     20k+ LoC
-     \href{https://gitlab.scintillating.us/scintillating/delphus}{open-source
-     software}, including end-to-end encrypted chat and data storage on the
-     InterPlanetary File System.
-     \item 2020 National Science Foundation I-Corps member at Carnegie Mellon
-     University.
-     \item dlab VC finalist (ranked top 7/200 applicants), Alchemist Accelerator
-     finalist (top 1\%).
-     \item Presented at the MIT Business Bitcoin Pitch Competition, Babson
-     College, HBS Tech Conference and Healthcare Conference 2019/20, MIT
-     Enterprise Forum, and Roxbury Innovation Center.
-     \item Inventor on utility patent filed in June 2019.
-\end{enumerate}
-
-\begin{eventlist}
-    \item{2020 -- Present}
-         {OpenAI}{Debater (Contract)}
-
-    Part-time honest debater testing OpenAI's
-    \href{https://www.alignmentforum.org/posts/Br4xDbYu4Frwrb64a/writeup-progress-on-ai-safety-via-debate-1}{Debate
-    Protocol}. Evaluated and provided evidence on conceptual physics and
-    mathematical problems to emulate the style of argument of potential future
-    AI protocols.
-\end{eventlist}
-
 \personal
-    [linkedin.com/in/the-kevin-liu] {75 Inches Brook Lane, Boxborough, MA 01719,
-    United States} {+1 (781) 315-6703} {kevin@kliu.io} {kliu.io}
-
-\section{Extracurriculars}
-
-\begin{enumerate}
-    \item \textbf{2020}: Stanford Effective Altruism, Stanford Existential Risks
-    Initiatve -- Exec Member
-
-        Completed Arete Fellowship, weekly reading of effective altruism
-        materials and discussion with a mentor group. Currently participating in
-        In-Depth Fellowship, a more targeted group for members seeking to
-        understand concepts including forecasting, long-term existential risks,
-        AI safety.
-
-        Other participation: AI Safety Reading Group, Confusion Dinners,
-        Projects Team
-
-    \item \textbf{2020}: Stanford One for the World -- Exec Member
-
-        \href{https://onefortheworld.su.domains}{Designed website} to emphasize
-        the impacts of effective altruism on global health and development.
-        Executive board member. Aimingto reach majority of undergraduate student
-        body this fall.
-    \item \textbf{2016-20}: Resource Force
-        \begin{itemize}
-             \item Created \href{https://gasleaks.info}{gasleaks.info}, a site
-             mapping and raising awareness for gas leaks in Acton, MA. Worked in
-             conjunction with Mothers Out Front. Presented to Green Advisory
-             Board, League of Women Voters, Acton Board of Selectmen; wrote
-             comments to DPU.
-        \end{itemize}
-    
-    \item \textbf{2016-20}: AB Robotics Member, Co-Captain
-        \begin{itemize}
-           \item Helped code and design the autonomous robot control program for
-           the Acton Robotics team for the FIRST robotics competition, using
-           Java with an Android phone controller, using CV tools and Vuforia.
-           \item First alliance pick at Needham Regional Qualifier, semifinalist
-           at 2019 MassFTC State Championship.
-        \end{itemize}
-    \item \textbf{Public-facing homelab}: Bare-metal Kubernetes cluster running
-    on NixOS
-
-        Self-learned experience in Linux, enterprise server system
-        administration. Proficient with HP iLO, NixOps deployment software.
-        Services secured with firewalls and automated Let's Encrypt for HTTPS.
-     
-\end{enumerate}
-
-See additional projects at \href{https://github.com/kliu128}{github.com/kliu128}
-and \href{https://gitlab.kliu.io/kevin}{gitlab.kliu.io/kevin}.
-    
-
-\section{Hackathons}
-
-\begin{yearlist}
-    \item{Hack3}
-         {Co-organizer} {July 2020}
-
-    % 2019-11-08 to 2019-11-10
-    \item{ETHWaterloo 2019}
-        {Torus, ENS, and NuCypher Sponsor Awards} {Cortex}
-
-    % 2018-03-17 to 2018-03-18
-    \item{MIT Bitcoin Expo 2018}
-        {\nth{2} Place} {reBlock}
-
-    % 2018-02
-    \item{MAHacks III}
-        {\nth{1} Place} {reBlock}
-
-    % 2018-09-22
-    \item{DoraHacks GHS}
-        {\nth{1} Place} {Delphus}
-
-    % 2017-09-30
-    \item{LexHack}
-        {\nth{2} Place} {Akira}
-
-    % 2017-11-04
-    \item{HackNEHS}
-        {\nth{3} Place} {Litcoin}
-
-    % 2018-02-18
-    \item{MIT Blueprint 2018}
-        {\nth{3} Place} {Quecoin}
-
-    % 2017-04-15 https://github.com/stuckathomedev/duck-feed/commits/master
-    \item{HackExeter 2017}
-        {Developer's Award} {Duck Feed}
-
-    % See https://gitlab.com/stuckathome/production-focus
-    \item{HackExeter 2018}
-        {\nth{1} Place} {Production Focus}
-\end{yearlist}
-
-\subsection{Notable resultant projects}
-
-\textbf{Cortex}\footnote{\url{https://gitlab.scintillating.us/scintillating/cortex}}
--- A social proof, key management, and data authorization platform for Ethereum
-
-\textbf{Delphus
-(reBlock)}\footnote{\url{https://gitlab.scintillating.us/scintillating/delphus}}
--- Secure, decentralized, and open scientific study management platform
-
-\textbf{Hack3}\footnote{\url{https://hack3.co}} -- Online hackathon with 200+
-participants from dozens of countries. Raised \$2,000 in sponsorship and brought
-in speakers from Amazon Web Services, KTBYTE Robotics, and the Stormgear
-robotics team. 
-
-\textbf{}
+    [linkedin.com/in/the-kevin-liu] {Boxborough, MA 01719} {+1 (781) 315-6703}
+    {kevin@kliu.io} {kliu.io}
 
 \section{Education}
 
 \begin{yearlist}
      \item{2020-2024}
-          {Stanford University} {Computer Science}
-     \item{2016-2020}
-          {Acton-Boxborough Regional High School} {GPA 4.895}
+          {Stanford University} {B.S. Computer Science}
 \end{yearlist}
 
-Current classes: CS103 \textit{Mathematical Foundations of Computing}, CS106B
-\textit{Programming Abstractions}.
+\section{Experience}
 
-\section{Programming skills}
+\begin{eventlist}
 
-\begin{factlist}
+\item{2018 -- Present}
+     {\myhref{https://delph.us}{\textbf{Delphus}}} {Co-founder \& CTO}
+\end{eventlist}
 
-\item{Experienced}
-     {JavaScript (React, Redux), TypeScript, HTML/CSS, C\#, Python, Java,
-     Kotlin, Solidity, \LaTeX}
+\vspace{-0.75cm}
 
-\item{Basic level}
-     {Rust, Bash, Ruby}
+Majority committer to 20k+ LoC
+\myhref{https://gitlab.scintillating.us/scintillating/delphus}{open-source codebase} in React, TypeScript, Solidity. Designed system architecture and
+distributed integrations. Inventor on filed utility patent.
 
-\item{Technologies}
-     {Kubernetes, Docker, LXC, QEMU/KVM, Ansible; Linux system administration,
-     machine learning with Tensorflow}
+CMU NSF I-Corps alum, dlab VC finalist (top 7/200), Alchemist Accelerator
+     finalist (top 1\%).
 
-\end{factlist}
+Presented at: MIT Bitcoin Expo, Babson College, HBS Tech/Healthcare Conf.
+     2019\&20, MITEF Startup Spotlight, Roxbury Innovation Center.
 
-\section{Other skills}
+\begin{eventlist}
+    \item{2020 -- Present}
+         {OpenAI}{Debater}
 
-\begin{factlist}
+    \vspace{-0.3cm}
+    Contracted honest debater testing OpenAI's Debate Protocol. Evaluated
+    conceptual physics and mathematical problems to emulate potential future AI
+    safety protocols.
+\end{eventlist}
 
-     \item{Languages}
-          {English (Native), Spanish (Working)}
-     
-\end{factlist}
+\section{Skills}
+
+\textsc{Experienced}: JavaScript (React, Redux), TypeScript, HTML/CSS, C\#,
+     Python, Java, Kotlin, Solidity, \LaTeX\\
+\textsc{Proficient}: Rust, Bash, Ruby on Rails\\
+\textsc{Technologies}: Kubernetes, Docker, LXC, KVM, Ansible, ML with
+Tensorflow/PyTorch
+
+
+\section{Projects}
+
+\textbf{Predicting income levels from satellite imagery, Stanford ACMLab}:
+Leveraged Pandas, numpy for data parsing. Trained 12-layer CNN with PyTorch on
+Google Colab.
+
+\textbf{Cortex}: Social proof, key management, and data authorization platform
+on Ethereum and NuCypher. Uses cryptographic signatures to validate domain name
+ownership. Made for ETHWaterloo 2019.
+
+\textbf{Home server administration}: Bare-metal Kubernetes cluster on Proxmox.
+Proficient with HP iLO, Ansible. Public services secured with firewalls and
+automated HTTPS.
+
+\textit{See also \url{https://kliu.io/projects}.}
+
+\section{Leadership}
+
+Exec Member, \textbf{Stanford Effective Altruism \& Existential Risks
+Initiative} (2020)
+
+Website Manager, \textbf{Stanford One for the World} (2020) --
+\myhref{https://onefortheworld.su.domains}{Designed website} to popularize
+global health and development donations.
+
+Senior Leader, \textbf{Resource Force} (2016-20) --
+    \myhref{https://gasleaks.info}{Designed website} and performed data analysis
+    to raise awareness for natural gas leaks. Presented to local and state
+    government.
+    
+Co-organizer \& Director of Logistics, \textbf{Hack3} (2019-2020) -- Managed and led online hackathon
+    with 200+ attendees, \$50k in prizes.
+
+Co-captain, \textbf{AB Robotics} (2016-20) -- Wrote autonomous control code in
+Kotlin, using CV and Vuforia. Semifinalist at 2019 MassFTC State Championship.
+
+\section{Achievements}
+
+Major hackathons won: \textbf{ETHWaterloo 2019} (decentralized social identity
+system), \textbf{MAHacks III} (scientific study management system; 1st),LexHack
+(open-source Alexa equivalent; 2nd), \textbf{MIT Blueprint 2018} (incentivized
+Q\&A system; 3rd).
+
+% Align to bottom
+\mbox{}
+\vfill
+\begin{flushright}
+    \textit{Version 2020.11}
+\end{flushright}
 
 \end{document}
