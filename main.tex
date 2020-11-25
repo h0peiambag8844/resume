@@ -1,119 +1,123 @@
+%!TEX program = lualatex
+
 \title{CV}
-%
-% tccv (two columns curriculum vitae) is a LaTeX class inspired by the template
-% found at latextemplates.com by Alessandro Plasmati.
-%
-% Create by Nicola Fontana, the original files can be downloaded from:
-% http://dev.entidi.com/p/tccv/
-%
-\documentclass[paper=letter]{tccv}
-\usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-\usepackage[super]{nth}
-\newcommand{\myhref}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+\documentclass[letterpaper,11pt]{article}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[english]{babel}
+% \usepackage[super]{nth}
+%\input{glyphtounicode}
+%\pdfgentounicode=1
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{RedViolet}
+
+\usepackage{simplecv}
+
+\setlist[itemize]{noitemsep}
+
+\boldname{Surname}{Name}{N.}
 
 \begin{document}
 
-\part{Kevin Liu}
-
-\personal
-    [linkedin.com/in/the-kevin-liu] {Boxborough, MA 01719} {+1 (781) 315-6703}
-    {kevin@kliu.io} {kliu.io}
+% Heading
+\headinginline{Kevin Liu}{
+     Website: \website{kliu.io} \\
+     Email: \email{kevin@kliu.io} \\
+     LinkedIn: \linkedin{the-kevin-liu} \\
+     GitHub: \github{kliu128}
+}
 
 \section{Education}
 
-\begin{yearlist}
-     \item{2020-2024}
-          {Stanford University} {B.S. Computer Science}
-\end{yearlist}
+\outerlist{
+
+     \entrybig
+     {\textbf{Stanford University}}{Stanford, CA}
+     {B.S. Computer Science}{2020\textendash 2024}
+
+}
 
 \section{Experience}
 
-\begin{eventlist}
+\outerlist{
 
-\item{2018 -- Present}
-     {\myhref{https://delph.us}{\textbf{Delphus}}} {Co-founder \& CTO}
-\end{eventlist}
+     \entrybig
+     {\textbf{Delphus}}{Boston, MA}
+     {Co-founder \& CTO}{2018\textendash present}
+     \innerlist{
+          \entry{Majority committer to 20k+ LoC
+               \href{https://gitlab.scintillating.us/scintillating/delphus}{open-source codebase} in React, TypeScript, Solidity. Designed system architecture and
+               distributed integrations. Inventor on filed utility patent.}
+          \entry{CMU NSF I-Corps alum, dlab VC finalist (top 7/200), Alchemist Accelerator
+               finalist (top 1\%).}
+          \entry{Presented at: MIT Bitcoin Expo, Babson College, HBS Tech/Healthcare Conf.
+               2019\&20, MITEF Startup Spotlight, Roxbury Innovation Center.}
+     }
 
-\vspace{-0.75cm}
+     \entrybig
+     {\textbf{OpenAI}}{San Francisco, CA}
+     {Debater}{2020\textendash present}
+     \innerlist{
+          \entry{Contracted honest debater testing OpenAI's Debate Protocol. Evaluated
+               conceptual physics and mathematical problems to emulate potential future AI
+               safety protocols.}
+     }
 
-Majority committer to 20k+ LoC
-\myhref{https://gitlab.scintillating.us/scintillating/delphus}{open-source codebase} in React, TypeScript, Solidity. Designed system architecture and
-distributed integrations. Inventor on filed utility patent.
-
-CMU NSF I-Corps alum, dlab VC finalist (top 7/200), Alchemist Accelerator
-     finalist (top 1\%).
-
-Presented at: MIT Bitcoin Expo, Babson College, HBS Tech/Healthcare Conf.
-     2019\&20, MITEF Startup Spotlight, Roxbury Innovation Center.
-
-\begin{eventlist}
-    \item{2020 -- Present}
-         {OpenAI}{Debater}
-
-    \vspace{-0.3cm}
-    Contracted honest debater testing OpenAI's Debate Protocol. Evaluated
-    conceptual physics and mathematical problems to emulate potential future AI
-    safety protocols.
-\end{eventlist}
-
+}
 \section{Skills}
 
-\textsc{Experienced}: JavaScript (React, Redux), TypeScript, HTML/CSS, C\#,
-     Python, Java, Kotlin, Solidity, \LaTeX\\
-\textsc{Proficient}: Rust, Bash, Ruby on Rails\\
-\textsc{Technologies}: Kubernetes, Docker, LXC, KVM, Ansible, ML with
+Experienced: JavaScript (React, Redux), TypeScript, HTML/CSS, C\#,
+Python, Java, Kotlin, Solidity, \LaTeX\\
+Proficient: Rust, Bash, Ruby on Rails\\
+Technologies: Kubernetes, Docker, LXC, KVM, Ansible, ML with
 Tensorflow/PyTorch
-
 
 \section{Projects}
 
-\textbf{Predicting income levels from satellite imagery, Stanford ACMLab}:
-Leveraged Pandas, numpy for data parsing. Trained 12-layer CNN with PyTorch on
-Google Colab.
+\begin{itemize}[label=--]
+     \item \textbf{Predicting income levels from satellite imagery, Stanford ACMLab}:
+           Leveraged Pandas, numpy for data parsing. Trained 12-layer CNN with PyTorch on
+           Google Colab.
 
-\textbf{Cortex}: Social proof, key management, and data authorization platform
-on Ethereum and NuCypher. Uses cryptographic signatures to validate domain name
-ownership. Made for ETHWaterloo 2019.
+     \item \textbf{Cortex}: Social proof, key management, and data authorization platform
+           on Ethereum and NuCypher. Uses cryptographic signatures to validate domain name
+           ownership. Made for ETHWaterloo 2019.
 
-\textbf{Home server administration}: Bare-metal Kubernetes cluster on Proxmox.
-Proficient with HP iLO, Ansible. Public services secured with firewalls and
-automated HTTPS.
+     \item \textbf{Home server administration}: Bare-metal Kubernetes cluster on Proxmox.
+           Proficient with HP iLO, Ansible. Public services secured with firewalls and
+           automated HTTPS.
+\end{itemize}
 
 \textit{See also \url{https://kliu.io/projects}.}
 
 \section{Leadership}
 
-Exec Member, \textbf{Stanford Effective Altruism \& Existential Risks
-Initiative} (2020)
-
-Website Manager, \textbf{Stanford One for the World} (2020) --
-\myhref{https://onefortheworld.su.domains}{Designed website} to popularize
-global health and development donations.
-
-Senior Leader, \textbf{Resource Force} (2016-20) --
-    \myhref{https://gasleaks.info}{Designed website} and performed data analysis
-    to raise awareness for natural gas leaks. Presented to local and state
-    government.
-    
-Co-organizer \& Director of Logistics, \textbf{Hack3} (2019-2020) -- Managed and led online hackathon
-    with 200+ attendees, \$50k in prizes.
-
-Co-captain, \textbf{AB Robotics} (2016-20) -- Wrote autonomous control code in
-Kotlin, using CV and Vuforia. Semifinalist at 2019 MassFTC State Championship.
+\begin{itemize}[label=--]
+     \item Exec Member, \textbf{Stanford Effective Altruism \& Existential Risks
+                Initiative} (2020)
+     \item Website Manager, \textbf{Stanford One for the World} (2020) --
+           \href{https://onefortheworld.su.domains}{Designed website} to popularize
+           global health and development donations.
+     \item Senior Leader, \textbf{Resource Force} (2016-20) --
+           \href{https://gasleaks.info}{Designed website} and performed data analysis
+           to raise awareness for natural gas leaks. Presented to local and state
+           government.
+     \item Co-organizer \& Director of Logistics, \textbf{Hack3} (2019-2020) -- Managed and led online hackathon
+           with 200+ attendees, \$50k in prizes.
+     \item Co-captain, \textbf{AB Robotics} (2016-20) -- Wrote autonomous control code in
+           Kotlin, using CV and Vuforia. Semifinalist at 2019 MassFTC State Championship.
+\end{itemize}
 
 \section{Achievements}
 
 Major hackathons won: \textbf{ETHWaterloo 2019} (decentralized social identity
-system), \textbf{MAHacks III} (scientific study management system; 1st),LexHack
+system), \textbf{MAHacks III} (scientific study management system; 1st), \textbf{LexHack}
 (open-source Alexa equivalent; 2nd), \textbf{MIT Blueprint 2018} (incentivized
 Q\&A system; 3rd).
 
-% Align to bottom
-\mbox{}
-\vfill
 \begin{flushright}
-    \textit{Version 2020.11}
+     \textit{Version 2020.11}
 \end{flushright}
 
 \end{document}
